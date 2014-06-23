@@ -1,5 +1,5 @@
 ---
-title       : Grade Information
+title       : Dartmouth Department Explorer Pitch
 subtitle    : 
 author      : 
 job         : 
@@ -14,24 +14,34 @@ mode        : selfcontained # {standalone, draft}
 
 This app shows grade and enrollment data from Dartmouth College. More information is available at [this blogpost](http://nosajtblr.tumblr.com/post/88108899108/at-dartmouth-grades-are-up-the-humanities-are-down).
 
+---
 ## Example Graph
 
-Here's the sort of graph that the app displays
+Here's the sort of graph that the app displays. This is the average grade given in the CS department at Dartmouth, by year.  
 
 ```{r}
-
+library(ggplot2)
+data <- read.csv("DeptData.csv")
+data <- subset(data,Department == "COSC")
+ggplot(data, aes_string(x="Year", y="grade")) + geom_line(color = "darkgrey") + 
+                        geom_point(colour = "darkgreen", size = 5) + 
+                        geom_text(aes_string(label="grade"), vjust=-2) + 
+                        scale_x_continuous(breaks=unique(data$Year)) +
+                        theme_bw()
 
 ```
 
-
+---
 ## Useful for Professors
 
 If you're a professor and you want to see how your department compares to others, then this is the app for you!
 
+---
 ## Useful for Students
 
 Figure out which departments tend to give high grades and which tend to give low grades.
 
+---
 ## Useful for Administrators
 
 Are you worried about grade inflation? Thinking about how to allocate research money?  
