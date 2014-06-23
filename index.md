@@ -1,5 +1,5 @@
 ---
-title       : Grade Information
+title       : Dartmouth Department Explorer Pitch
 subtitle    : 
 author      : 
 job         : 
@@ -10,31 +10,32 @@ widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 ---
 
-## Dartmouth Grade Shiny App
+## Dartmouth College Shiny App
 
+This app shows grade and enrollment data from Dartmouth College. More information is available at [this blogpost](http://nosajtblr.tumblr.com/post/88108899108/at-dartmouth-grades-are-up-the-humanities-are-down).
 
+---
+## Example Graph
 
+Here's the sort of graph that the app displays. This is the average grade given in the CS department at Dartmouth, by year.  
 
-```r
-2+2
-```
+![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1.png) 
 
-```
-## [1] 4
-```
+---
+## Useful for Professors
 
-## Slide 2
+If you're a professor and you want to see how your department compares to others, then this is the app for you!
 
+---
+## Useful for Students
 
-## 3
+Figure out which departments tend to give high grades and which tend to give low grades.
 
+---
+## Useful for Administrators
 
-## 4
-
-
-## 5
-
-
+Are you worried about grade inflation? Thinking about how to allocate research money?  
+This app provides you with helpful data to make policy decisions.
 
 
 

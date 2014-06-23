@@ -19,7 +19,7 @@ This app shows grade and enrollment data from Dartmouth College. More informatio
 
 Here's the sort of graph that the app displays. This is the average grade given in the CS department at Dartmouth, by year.  
 
-```{r}
+```{r echo=FALSE}
 library(ggplot2)
 data <- read.csv("DeptData.csv")
 data <- subset(data,Department == "COSC")
