@@ -10,11 +10,20 @@ widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 ---
 
-## Read-And-Delete
-
+## Dartmouth Grade Shiny App
 
 
 ## Slide 2
+
+
+## 3
+
+
+## 4
+
+
+## 5
+
 
 
 
