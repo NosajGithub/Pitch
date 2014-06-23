@@ -13,6 +13,12 @@ mode        : selfcontained # {standalone, draft}
 ## Dartmouth Grade Shiny App
 
 
+
+```{r}
+2+2
+
+```
+
 ## Slide 2
 
 
